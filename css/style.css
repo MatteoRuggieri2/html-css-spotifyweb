@@ -7,7 +7,7 @@
 
 /*COMMON*/
 body{
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
 }
 
 main{
@@ -79,7 +79,10 @@ main aside{
 }
 
 .playlist{
+    display: flex;
+    flex-direction: column;
     height: 100%;
+    overflow: hidden;
 }
 
 .playlist-maker{
@@ -88,6 +91,10 @@ main aside{
 
     /*test*/
     background-color: lightgreen;
+}
+
+.user{
+    flex-shrink: 0;
 }
 
 /*main-content*/
@@ -126,7 +133,7 @@ main aside{
         display: inline-block;
     }
 
-    .playlist{
+    .playlist *{
         display: none;
     }
 
