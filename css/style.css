@@ -7,7 +7,7 @@
 
 /*COMMON*/
 body{
-    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
 }
 
 main{
@@ -37,6 +37,22 @@ img{
     height: 100%;
 }
 
+main aside ul{
+    list-style-type: none;
+    padding: 5px 20px;
+}
+
+main aside a{
+    text-decoration: none;
+}
+
+/*Icon*/
+.plus-icon{
+    font-size: 20px;
+    padding: 10px;
+    background-color: #a3a3a3;
+}
+
 /*MAIN*/
 /*main-header*/
 .main-header{
@@ -62,12 +78,17 @@ main aside{
     width: 100%;
     height: 80px;
     flex-shrink: 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 
     /*test*/
     background-color: lightgray;
 }
 
 .logo{
+    width: 150px;
+    margin-left: 20px;
     display: inline-block;
 }
 
@@ -78,6 +99,16 @@ main aside{
     background-color: red;
 }
 
+aside ul a{
+    font-size: 13px;
+}
+
+aside ul a img{
+    width: 25px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+}
+
 .playlist{
     display: flex;
     flex-direction: column;
@@ -85,7 +116,21 @@ main aside{
     overflow: hidden;
 }
 
+.playlist h2{
+    margin-left: 20px;
+    font-size: 14px;
+}
+
 .playlist-maker{
+    /* margin: 5px; */
+}
+
+.playlist-maker span.plus-icon{
+    display: inline-block;
+    margin: 3px 10px;
+}
+
+.playlist-group{
     flex-grow: 1;
     overflow-y: auto;
 
