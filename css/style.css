@@ -27,7 +27,7 @@ footer{
     background-color: #282828;
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: center;
 }
 
 img{
@@ -84,7 +84,7 @@ main aside a{
 main aside{
     width: 220px;
     height: 100%;
-    min-height: 300px;
+    min-height: 400px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -153,7 +153,7 @@ aside ul a img{
     padding: 7px 10px;
 }
 
-.playlist-maker > span{
+.playlist-maker a span:last-child{
     font-size: 15px;
     color: #666666;
 }
@@ -234,15 +234,15 @@ aside ul a img{
     display: flex;
 }
 
+.copertina{
+    display: flex;
+    align-items: center;
+}
+
 .album-container .copertina img{
     width: 50px;
     height: 50px;
     margin: 0 10px;
-}
-
-.copertina{
-    display: flex;
-    align-items: center;
 }
 
 .album{
@@ -253,14 +253,21 @@ aside ul a img{
 
 .album .album-name{
     font-size: 12px;
+    text-decoration: none;
+    color: white;
     font-weight: bold;
 }
 
 .album .song-name{
     font-size: 10px;
-    font-weight: bold;
+    text-decoration: none;
     color: #666666;
+    font-weight: bold;
 
+}
+.song .song-icon a{
+    margin: 0 5px;
+    color: #666666;
 }
 
 
@@ -275,6 +282,7 @@ aside ul a img{
 /*Mediaquery for Smartphone (x-small)*/
 @media screen and (max-width: 600px) {
     
+    /*MAIN*/
     /*main-header*/
     .main-header{
         width: calc( 100% - 50px );
@@ -322,6 +330,23 @@ aside ul a img{
     /*main-content*/
     .main-content{
         width: calc( 100% - 50px );
+    }
+
+
+    /*FOOTER*/
+    /*Copertina*/
+    .album-container .copertina img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .song{
+        width: 170px;
+    }
+
+    .song .song-icon a{
+        display: block;
+        margin: 0 10px;
     }
 
 }
