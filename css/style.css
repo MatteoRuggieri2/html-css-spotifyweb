@@ -34,9 +34,24 @@ img{
 
 .col{
     float: left;
+}
 
-    /*tetst*/
-    height: 100%;
+/*Button*/
+.btn{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-large{
+    padding: 10px 30px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.bkg-white{
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
 }
 
 main aside ul{
@@ -55,6 +70,8 @@ main aside a{
 .main-header{
     width: calc( 100% - 220px );
     height: 80px;
+    padding: 15px 20px;
+    text-align: right;
     position: fixed;
     top: 0;
     right: 0;
