@@ -23,9 +23,11 @@ footer{
     width: 100%;
     height: 100px;
     overflow: hidden;
-
-    /*test*/
-    background-color: bisque;
+    color: white;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 img{
@@ -120,9 +122,10 @@ aside ul a img{
     width: 25px;
     margin-bottom: 5px;
     vertical-align: middle;
+    filter: opacity(0.7);
 }
 
-
+/*Playlist*/
 .playlist{
     display: flex;
     flex-direction: column;
@@ -143,6 +146,7 @@ aside ul a img{
     background-color: #a3a3a3;
 }
 
+/*Playlist maker*/
 .playlist-maker span.plus-icon{
     display: inline-block;
     margin: 7px 7px 7px 20px;
@@ -159,6 +163,7 @@ aside ul a img{
     overflow-y: auto;
 }
 
+/*User*/
 .user{
     flex-shrink: 0;
     margin: 0 20px;
@@ -172,6 +177,7 @@ aside ul a img{
 .user .download-app img.download-icon{
     width: 16px;
     vertical-align: middle;
+    filter: opacity(0.7);
 }
 
 .user .download-app span{
@@ -210,11 +216,40 @@ aside ul a img{
     height: 100%;
     padding-top: 100px;
     overflow-y: auto;
-    background-color: lightcoral;
+    background-color: darkcyan;
+}
+
+/*FOOTER*/
+.song{
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+
+    /*test*/
+    background-color: darkgoldenrod;
+}
+
+.album{
+    display: flex;
+
+    /*test*/
+    background-color: darkolivegreen;
+}
+
+.album .copertina img{
+    width: 50px;
+    margin: 0 10px;
+}
+
+.song-title{
+
+    /*test*/
+    background-color: darkorange;
 }
 
 
 
+/*MEDIAQUERY*/
 /*Mediaquery for Tablet (medium)*/
 
 
@@ -227,7 +262,7 @@ aside ul a img{
     /*main-header*/
     .main-header{
         width: calc( 100% - 50px );
-}
+    }
 
     /*main-aside*/
     main aside{
