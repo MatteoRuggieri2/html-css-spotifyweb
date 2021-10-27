@@ -15,6 +15,7 @@ main{
     height: calc( 100vh - 100px );
     overflow: hidden;
 
+    /*test*/
     background-color: aquamarine;
 }
 
@@ -23,6 +24,7 @@ footer{
     height: 100px;
     overflow: hidden;
 
+    /*test*/
     background-color: bisque;
 }
 
@@ -67,6 +69,8 @@ main aside{
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    font-weight: 700;
+    background-color: #000000;
 }
 
 .logo-container{
@@ -76,9 +80,6 @@ main aside{
     display: flex;
     justify-content: left;
     align-items: center;
-
-    /*test*/
-    background-color: lightgray;
 }
 
 .logo{
@@ -89,9 +90,8 @@ main aside{
 
 .small-logo{
     display: none;
-
-    /*test*/
-    background-color: red;
+    width: 25px;
+    margin-bottom: 5px;
 }
 
 aside ul li{
@@ -104,6 +104,7 @@ aside ul a img{
     margin-bottom: 5px;
     vertical-align: middle;
 }
+
 
 .playlist{
     display: flex;
@@ -139,9 +140,6 @@ aside ul a img{
 .playlist-group{
     flex-grow: 1;
     overflow-y: auto;
-
-    /*test*/
-    background-color: lightgreen;
 }
 
 .user{
@@ -180,9 +178,13 @@ aside ul a img{
 }
 
 .username{
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
     color: white;
+}
+
+.user span{
+    margin-left: 5px;
 }
 
 /*main-content*/
@@ -207,12 +209,19 @@ aside ul a img{
     
     /*main-header*/
     .main-header{
-        width: calc( 100% - 60px );
+        width: calc( 100% - 50px );
 }
 
     /*main-aside*/
     main aside{
-        width: 60px;
+        width: 50px;
+        align-items: center;
+    }
+
+    .logo-container{
+        height: auto;
+        margin-top: 5px;
+        justify-content: center;
     }
 
     .logo{
@@ -223,13 +232,28 @@ aside ul a img{
         display: inline-block;
     }
 
+    aside ul a span{
+        display: none;
+    }
+
     .playlist *{
         display: none;
     }
 
+    .download-app{
+        text-align: center;
+        margin-right: 2px;
+        border-bottom: none;
+    }
+
+    .user span{
+        display: none;
+        margin-left: 0;
+    }
+
     /*main-content*/
     .main-content{
-        width: calc( 100% - 60px );
+        width: calc( 100% - 50px );
     }
 
 }
