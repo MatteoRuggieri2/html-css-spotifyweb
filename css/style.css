@@ -44,13 +44,8 @@ main aside ul{
 
 main aside a{
     text-decoration: none;
-}
-
-/*Icon*/
-.plus-icon{
-    font-size: 20px;
-    padding: 10px;
-    background-color: #a3a3a3;
+    font-size: 13px;
+    color: #666666;
 }
 
 /*MAIN*/
@@ -99,8 +94,9 @@ main aside{
     background-color: red;
 }
 
-aside ul a{
-    font-size: 13px;
+aside ul li{
+    margin: 3px 0;
+    line-height: 25px;
 }
 
 aside ul a img{
@@ -117,17 +113,27 @@ aside ul a img{
 }
 
 .playlist h2{
+    margin-top: 10px;
     margin-left: 20px;
     font-size: 14px;
+    color: white;
 }
 
-.playlist-maker{
-    /* margin: 5px; */
+.plus-icon{
+    font-size: 20px;
+    color: black;
+    background-color: #a3a3a3;
 }
 
 .playlist-maker span.plus-icon{
     display: inline-block;
-    margin: 3px 10px;
+    margin: 7px 7px 7px 20px;
+    padding: 7px 10px;
+}
+
+.playlist-maker > span{
+    font-size: 15px;
+    color: #666666;
 }
 
 .playlist-group{
@@ -140,6 +146,43 @@ aside ul a img{
 
 .user{
     flex-shrink: 0;
+    margin: 0 20px;
+}
+
+.download-app{
+    padding: 5px 0;
+    border-bottom: 1px solid #666666;
+}
+
+.user .download-app img.download-icon{
+    width: 16px;
+    vertical-align: middle;
+}
+
+.user .download-app span{
+    font-size: 13px;
+    color: #666666;
+}
+
+.profile{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.profile img.profile-icon{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    vertical-align: middle;
+    background-color: #808080;
+    color: white;
+}
+
+.username{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
 }
 
 /*main-content*/
@@ -150,6 +193,8 @@ aside ul a img{
     overflow-y: auto;
     background-color: lightcoral;
 }
+
+
 
 /*Mediaquery for Tablet (medium)*/
 
