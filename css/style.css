@@ -272,9 +272,13 @@ aside ul a img{
 
 /*Player*/
 .player{
+    min-width: 260px;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    /*test*/
+    background-color: yellowgreen;
 }
 
 .play-buttons{
@@ -282,6 +286,9 @@ aside ul a img{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    /*test*/
+    background-color: darkmagenta;
 }
 
 .play-buttons a{
@@ -297,9 +304,13 @@ aside ul a img{
 
 .time-line{
     width: 35vw;
+    min-width: 260px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    /*test*/
+    background-color: orange;
 }
 
 .minutes{
@@ -309,28 +320,37 @@ aside ul a img{
 }
 
 .line{
-    display: flex;
     width: 100%;
+    /* min-width: 150px; */
     height: 4px;
     margin: 0 20px;
     border-radius: 2px;
     background-color: #5a5a5a;
 }
 
-.time{
-    width: 20%;
+.line:hover{
+    cursor: pointer;
+}
+
+.level{
     height: 100%;
     border-radius: 2px;
     background-color: #c1c1c1;
     position: relative;
 }
 
-.time:hover{
+.level:hover{
     background-color: yellowgreen;
     cursor: pointer;
 }
 
-.time::after{
+.time{
+    width: 20%;
+}
+
+/*Time point - pseudo element*/
+.time::after,
+.volume::after{
     content: "";
     display: inline-block;
     width: 10px;
@@ -343,17 +363,47 @@ aside ul a img{
     cursor: grab;
 }
 
+.option-song{
+    width: 225px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /*test*/
+    background-color: orange;
+}
+
+.option-song a{
+    margin: 0 5px;
+    font-size: 14px;
+    color: white;
+}
+
+.option-song .line{
+    width: 130px;
+    /* min-width: 130px; */
+    margin: 0 5px;
+}
+
+.volume{
+    width: 30%;
+}
+
 
 
 /*MEDIAQUERY*/
 /*Mediaquery for Tablet (medium)*/
-
+@media screen and (min-width: 700px) {
+    
+}
 
 /*Mediaquery for Smartphone (small)*/
-
+@media screen and (min-width: 600px) {
+    
+}
 
 /*Mediaquery for Smartphone (x-small)*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 599px) {
     
     /*MAIN*/
     /*main-header*/
@@ -414,12 +464,40 @@ aside ul a img{
     }
 
     .song{
-        width: 170px;
+        width: 150px;
     }
 
     .song .song-icon a{
         display: block;
         margin: 0 10px;
+    }
+
+    /*Player*/
+    .player{
+        min-width: 200px;
+    }
+
+    .time-line{
+        width: 190px;
+        min-width: 190px;
+    
+        /*test*/
+        background-color: orange;
+    }
+
+    .time-line .line{
+        width: 100%;
+        min-width: 50px;
+        margin: 0;
+    }
+
+    .option-song{
+        width: auto;
+    }
+
+    /*Volume*/
+    .option-song .line{
+        width: 80px;
     }
 
 }
