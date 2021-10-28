@@ -263,9 +263,7 @@ aside ul a img{
 
 /*Main Section*/
 section{
-
-    /*Test*/
-    background-color: darkturquoise;
+    margin: 20px 0;
 }
 
 .section-title{
@@ -300,6 +298,11 @@ section{
 
 .img-card{
     position: relative;
+}
+
+.circle-img img{
+    display: block;
+    border-radius: 50%;
 }
 
 .img-card a.play-icon{
