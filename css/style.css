@@ -430,6 +430,10 @@ section{
     font-weight: bold;
 }
 
+.album .album-name:hover{
+    text-decoration: underline;
+}
+
 .album .song-name{
     font-size: 10px;
     text-decoration: none;
@@ -437,9 +441,18 @@ section{
     font-weight: bold;
 
 }
+
+.album .song-name:hover{
+    text-decoration: underline;
+}
+
 .song .song-icon a{
     margin: 0 5px;
     color: #666666;
+}
+
+.song .song-icon a:hover{
+    color: white;
 }
 
 /*Player*/
@@ -466,6 +479,15 @@ section{
 .play-buttons .play-icon{
     font-size: 30px;
     margin: 0 18px;
+    transition: transform 0.5s;
+}
+
+.play-buttons .play-icon:hover{
+    transform: scale(1.05);
+}
+
+.play-buttons .play-icon:active{
+    transform: scale(1);
 }
 
 .time-line{
@@ -492,6 +514,10 @@ section{
 
 .line:hover{
     cursor: pointer;
+}
+
+.line:hover .level{
+    background-color: yellowgreen;
 }
 
 .level{
@@ -523,6 +549,15 @@ section{
     top: -70%;
     left: 95%;
     cursor: grab;
+    filter: opacity(0);
+}
+
+.line:hover .time::after{
+    filter: opacity(1);
+}
+
+.line:hover .volume::after{
+    filter: opacity(1);
 }
 
 .option-song{
