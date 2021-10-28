@@ -294,19 +294,26 @@ section{
     text-align: center;
 }
 
-
+.card:hover img{
+    filter: brightness(0.5);
+}
 
 .img-card{
     position: relative;
 }
 
 .img-card a.play-icon{
+    display: none;
     font-size: 50px;
     color: white;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate( -50%, -50% );
+}
+
+.card:hover a.play-icon{
+    display: inline-block;
 }
 
 .info-music .song-title a{
