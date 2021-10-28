@@ -44,6 +44,15 @@ img{
 .btn{
     display: inline-block;
     text-decoration: none;
+    transition: transform 0.5s;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+.btn:active{
+    transform: scale(1);
 }
 
 .btn-large{
@@ -120,6 +129,22 @@ aside ul li{
     line-height: 25px;
 }
 
+aside ul li:hover img{
+    filter: opacity(1);
+}
+
+aside ul li:hover a{
+    color: white;
+}
+
+.active-aside a{
+    color: white;
+}
+
+.active-aside img{
+    filter: opacity(1);
+}
+
 aside ul a img{
     width: 25px;
     margin-bottom: 5px;
@@ -155,9 +180,17 @@ aside ul a img{
     padding: 7px 10px;
 }
 
-.playlist-maker a span:last-child{
+.playlist-maker a .new-playlist{
     font-size: 15px;
     color: #666666;
+}
+
+ .playlist-maker a:hover .new-playlist{
+    color: white;
+}
+
+.playlist-maker a:hover .plus-icon{
+    background-color: #dbdbdb;
 }
 
 .playlist-group{
@@ -174,6 +207,10 @@ aside ul a img{
 .download-app{
     padding: 5px 0;
     border-bottom: 1px solid #666666;
+}
+
+.download-app a:hover span{
+    color: white;
 }
 
 .user .download-app img.download-icon{
@@ -206,6 +243,10 @@ aside ul a img{
     font-size: 14px;
     font-weight: bold;
     color: white;
+}
+
+.username:hover{
+    text-decoration: underline;
 }
 
 .user span{
@@ -253,6 +294,10 @@ aside ul a img{
     font-size: 12px;
     font-weight: bold;
     color: #7a7c81;
+}
+
+.main-content nav a:hover{
+    color: white;
 }
 
 /*Main Section*/
@@ -326,6 +371,10 @@ section{
     text-decoration: none;
     font-size: 13px;
     color: #7a7c81;
+}
+
+.info-music a:hover{
+    text-decoration: underline;
 }
 
 /*FOOTER*/
