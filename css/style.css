@@ -278,7 +278,7 @@ aside ul a img{
     align-items: center;
 
     /*test*/
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
 }
 
 .play-buttons{
@@ -288,7 +288,7 @@ aside ul a img{
     align-items: center;
 
     /*test*/
-    background-color: darkmagenta;
+    /* background-color: darkmagenta; */
 }
 
 .play-buttons a{
@@ -310,7 +310,7 @@ aside ul a img{
     align-items: center;
 
     /*test*/
-    background-color: orange;
+    /* background-color: orange; */
 }
 
 .minutes{
@@ -321,7 +321,6 @@ aside ul a img{
 
 .line{
     width: 100%;
-    /* min-width: 150px; */
     height: 4px;
     margin: 0 20px;
     border-radius: 2px;
@@ -370,7 +369,7 @@ aside ul a img{
     align-items: center;
 
     /*test*/
-    background-color: orange;
+    /* background-color: orange; */
 }
 
 .option-song a{
@@ -393,13 +392,43 @@ aside ul a img{
 
 /*MEDIAQUERY*/
 /*Mediaquery for Tablet (medium)*/
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 1099px) {
     
 }
 
 /*Mediaquery for Smartphone (small)*/
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 699px) {
     
+    /*FOOTER*/
+    /*Player*/
+    .player{
+        min-width: 200px;
+    }
+
+    .time-line{
+        width: 190px;
+        min-width: 190px;
+    
+        /*test*/
+        /* background-color: orange; */
+    }
+
+    .time-line .line{
+        width: 100%;
+        min-width: 50px;
+        margin: 0;
+    }
+
+    /*Option Song*/
+    .option-song{
+        width: auto;
+    }
+
+    /*Volume*/
+    .option-song .line{
+        width: 75px;
+    }
+
 }
 
 /*Mediaquery for Smartphone (x-small)*/
@@ -482,7 +511,7 @@ aside ul a img{
         min-width: 190px;
     
         /*test*/
-        background-color: orange;
+        /* background-color: orange; */
     }
 
     .time-line .line{
@@ -491,6 +520,7 @@ aside ul a img{
         margin: 0;
     }
 
+    /*Option Song*/
     .option-song{
         width: auto;
     }
