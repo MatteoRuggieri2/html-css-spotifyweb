@@ -69,7 +69,7 @@ img{
 
 main aside ul{
     list-style-type: none;
-    padding: 5px 20px;
+    padding: 5px 0;
 }
 
 main aside a{
@@ -89,6 +89,7 @@ main aside a{
     top: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
 }
 
 /*main-aside*/
@@ -139,6 +140,20 @@ aside ul li:hover a{
 
 .active-aside a{
     color: white;
+}
+
+.page li.active-aside{
+    border-left: 3px solid yellowgreen;
+}
+
+.page li{
+    border-left: 3px solid black;
+    padding: 0 17px;
+}
+
+.page li:hover{
+    border-left: 3px solid rgba(153, 205, 50, 0.3);
+    padding: 0 17px;
 }
 
 .active-aside img{
@@ -196,6 +211,7 @@ aside ul a img{
 .playlist-group{
     flex-grow: 1;
     overflow-y: auto;
+    padding: 20px;
 }
 
 /*User*/
