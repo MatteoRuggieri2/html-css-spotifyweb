@@ -14,9 +14,6 @@ main{
     width: 100%;
     height: calc( 100vh - 100px );
     overflow: hidden;
-
-    /*test*/
-    background-color: aquamarine;
 }
 
 footer{
@@ -229,9 +226,6 @@ aside ul a img{
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
-
-    /*test*/
-    /* background-color: orange; */
 }
 
 .nav-active::after{
@@ -389,9 +383,6 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    /*test*/
-    /* background-color: yellowgreen; */
 }
 
 .play-buttons{
@@ -399,9 +390,6 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    /*test*/
-    /* background-color: darkmagenta; */
 }
 
 .play-buttons a{
@@ -421,9 +409,6 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    /*test*/
-    /* background-color: orange; */
 }
 
 .minutes{
@@ -480,9 +465,6 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    /*test*/
-    /* background-color: orange; */
 }
 
 .option-song a{
@@ -493,7 +475,6 @@ section{
 
 .option-song .line{
     width: 130px;
-    /* min-width: 130px; */
     margin: 0 5px;
 }
 
@@ -506,11 +487,23 @@ section{
 /*MEDIAQUERY*/
 /*Mediaquery for Tablet (medium)*/
 @media screen and (max-width: 1099px) {
+
+    /*MAIN*/
+    /*Main Content*/
+    .card{
+        width: calc( ( 100% / 4 ) - 15px );
+    }
     
 }
 
 /*Mediaquery for Smartphone (small)*/
 @media screen and (max-width: 699px) {
+
+    /*MAIN*/
+    /*Main Content*/
+    .card{
+        width: calc( ( 100% / 2 ) - 15px );
+    }
     
     /*FOOTER*/
     /*Player*/
@@ -521,9 +514,6 @@ section{
     .time-line{
         width: 190px;
         min-width: 190px;
-    
-        /*test*/
-        /* background-color: orange; */
     }
 
     .time-line .line{
@@ -622,9 +612,6 @@ section{
     .time-line{
         width: 190px;
         min-width: 190px;
-    
-        /*test*/
-        /* background-color: orange; */
     }
 
     .time-line .line{
