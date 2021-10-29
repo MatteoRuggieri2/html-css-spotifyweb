@@ -25,6 +25,10 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 20;
+    position: fixed;
+    bottom: 0;
+    right: 0;
 }
 
 .container{
